@@ -1,0 +1,17 @@
+from math import
+
+#lcm and gcd of three numbers
+
+def lcm(a,b,c):
+          gcd2=gcd(b,c)
+          gcd3=gcd(a,gcd2)
+          lcm2=b*c // gcd2
+          lcm3=a*lcm2 // gcd(a,lcm2)
+          return (lcm3,gcd3)
+h=input("(1) 2 Digit LCM Or \n(2) 3 Digit LCM\n :")
+if h == "2":
+   a = int(input("Number 1: "))
+        b = int(input("Number 2: "))
+        c = int(input("Number 3: "))
+        (res1,res2)=lcm(a,b,c)
+        print("The LCM Of " + str(a) + " And " + str(b) + " And " + str(c) +         " Is " + str(lcm(a, b, c)))

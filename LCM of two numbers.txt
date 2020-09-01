@@ -1,0 +1,19 @@
+#LCM of two numbers
+
+X = float(input("Enter first number: "))
+Y = float(input("Enter second number: "))
+
+#Logic begins here
+if(X > Y):
+  greater = X
+else:
+  greater = Y
+
+while(True):
+  if((greater % X == 0) and (greater % Y == 0)):
+    lcm = greater
+     break
+  greater += 1
+
+Display result
+print("L.C.M. is",LCM)
